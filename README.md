@@ -32,9 +32,8 @@ pip3 install reedsolo
 
    最终输出，[载体音频文件名]WithSecret.wav
    
-   
-   
 2. Extract程序对应的是提取程序
+   
    使用方法
 
    ```shell
@@ -46,4 +45,5 @@ pip3 install reedsolo
    python Extract.py "载密音频文件名" [K值]
    ```
    最终输出，Secret Audio.wav
+   
    注：解密需要U1.dat、P.dat、V1.dat、K值作为密钥，否则不能解密成功
