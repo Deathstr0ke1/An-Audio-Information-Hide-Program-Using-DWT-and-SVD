@@ -24,7 +24,7 @@ def readWaveData(filepath):
     return WaveData, time
 
 
-# 命令行传参
+# 命令行传参，分别有两个和三个的情况
 if len(sys.argv) == 3:
     # 对输入进行判断
     AudioFileName1 = sys.argv[1]
