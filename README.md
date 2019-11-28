@@ -14,9 +14,9 @@ pip3 install PyWavelets
 pip3 install reedsolo
 ```
 
-注：建议使用相同路径下的文件，不同路径还没测试过。
+注：建议使用相同路径下的文件，不同路径还没测试过，即代码、音频文件放于同一目录，直接使用文件名
 
-1. Hide程序对应的是隐藏程序
+1. Hide Information程序对应的是隐藏程序
 
    使用方法
 
@@ -29,8 +29,8 @@ pip3 install reedsolo
    ```shell
    python Hide.py "载体音频文件名" "秘密音频文件名"
    ```
-
-   最终输出，[载体音频文件名]WithSecret.wav
+   
+   输出：载体音频文件名WithSecret.wav
    
 2. Extract程序对应的是提取程序
    
@@ -44,6 +44,31 @@ pip3 install reedsolo
    ```shell
    python Extract.py "载密音频文件名" [K值]
    ```
-   最终输出，Secret Audio.wav
+   输出：Secret Audio.wav
    
    注：解密需要U1.dat、P.dat、V1.dat、K值作为密钥，否则不能解密成功
+
+3. Wav Picture程序对应的是打印音频波形图程序
+   
+   使用方法1
+   
+   ```shell
+   py -3 Wav.py "音频文件名"
+   ```
+   
+   输出：音频文件名.png
+   
+   使用方法2
+   
+   （用于输出两个音频文件的差值波形）
+   
+   ```shell
+   py -3 Wav.py "音频文件名1" "音频文件名2"
+   ```
+   
+   输出：Compare Wav.png
+   
+   
+   
+   
+   
